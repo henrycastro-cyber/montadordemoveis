@@ -1,0 +1,663 @@
+
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 170px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #eee5d8;
+
+    color: #3f2b1f;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: #9b7650;
+
+    padding: 20px 20px 18px;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(60, 40, 25, 0.25);
+
+    border-bottom: 5px solid #65452d;
+}
+
+
+/* TÍTULO */
+
+header h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    text-align: center;
+}
+
+
+/* SUBTÍTULO */
+
+header p {
+    margin: 8px 0 15px;
+
+    color: #fff8ef;
+
+    font-size: 16px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ffffff;
+
+    color: #65452d;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    background-color: #ffffff;
+
+    margin: 30px 0;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(70, 45, 25, 0.12);
+
+    border-top: 5px solid #b89568;
+
+    scroll-margin-top: 180px;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h2 {
+    margin-top: 0;
+
+    color: #65452d;
+
+    font-size: 27px;
+
+    border-left: 6px solid #b89568;
+
+    padding-left: 14px;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+section ul {
+    padding-left: 10px;
+
+    list-style: none;
+}
+
+section li {
+    background-color: #f5eee5;
+
+    margin: 12px 0;
+
+    padding: 14px 16px;
+
+    border-left: 4px solid #b89568;
+
+    border-radius: 6px;
+
+    color: #4b382a;
+
+    font-size: 17px;
+
+    transition: all 0.2s ease;
+}
+
+section li:hover {
+    transform: translateX(5px);
+
+    background-color: #eee1d0;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+#contato {
+    text-align: center;
+}
+
+#contato p {
+    font-size: 18px;
+
+    color: #5c4837;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    margin: 8px;
+
+    background-color: #8b6848;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(70, 45, 25, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #65452d;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 12px rgba(70, 45, 25, 0.3);
+}
+
+
+/* =========================
+   LOCALIZAÇÃO
+========================= */
+
+#localizacao p {
+    color: #5c4837;
+
+    font-size: 17px;
+}
+
+iframe {
+    display: block;
+
+    width: 100%;
+
+    height: 350px;
+
+    margin-top: 25px;
+
+    border: 3px solid #c8a77a !important;
+
+    border-radius: 12px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 195px;
+    }
+
+
+    /* HEADER */
+
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 14px;
+
+        margin-bottom: 12px;
+    }
+
+
+    /* MENU */
+
+    .menu {
+        gap: 5px;
+
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 14px;
+
+        padding: 7px 9px;
+    }
+
+
+    /* CONTEÚDO */
+
+    main {
+        padding: 0 10px;
+    }
+
+
+    /* SEÇÕES */
+
+    section {
+        padding: 25px 18px;
+
+        margin: 20px 0;
+
+        border-radius: 12px;
+
+        scroll-margin-top: 205px;
+    }
+
+
+    /* TÍTULOS */
+
+    h2 {
+        font-size: 23px;
+    }
+
+
+    /* SERVIÇOS */
+
+    section li {
+        font-size: 15px;
+
+        padding: 12px;
+
+        margin: 9px 0;
+    }
+
+
+    /* BOTÕES */
+
+    .botao {
+        display: block;
+
+        width: 100%;
+
+        margin: 10px 0;
+
+        padding: 14px 10px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* MAPA */
+
+    iframe {
+        height: 300px;
+
+        margin-top: 20px;
+    }
+}
+
+
+/* =========================
+   TELAS GRANDES
+========================= */
+
+@media (min-width: 1200px) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    main {
+        max-width: 1150px;
+    }
+
+    section {
+        padding: 45px 50px;
+    }
+}
+/* =========================
+   GALERIA DE TRABALHOS
+========================= */
+
+#Montagens {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+#Montagens h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Container das fotos */
+#Montagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Título ocupa toda a linha */
+#Montagens h2 {
+    flex-basis: 100%;
+}
+
+/* Fotos */
+.foto-servico {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efeito no computador */
+.foto-servico:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    #Montagens {
+        padding: 30px 12px;
+        gap: 20px;
+    }
+
+    #Montagens h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .foto-servico {
+        width: 100%;
+        max-width: 100%;
+
+        /* Mantém uma boa proporção no celular */
+        height: auto;
+        aspect-ratio: 4 / 3;
+
+        object-fit: cover;
+
+        border-radius: 12px;
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Remove o zoom no celular */
+    .foto-servico:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 400px) {
+
+    #Montagens {
+        padding: 25px 10px;
+    }
+
+    #Montagens h2 {
+        font-size: 22px;
+    }
+
+    .foto-servico {
+        aspect-ratio: 4 / 3;
+        border-radius: 10px;
+    }
+}
+/* =========================
+   AVALIAÇÕES
+========================= */
+
+#Avaliação {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+#Avaliação h2 {
+    margin-bottom: 30px;
+}
+
+/* Área das avaliações */
+.avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+}
+
+/* Imagens das avaliações */
+.foto-avaliacao {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+
+    background: white;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efeito no computador */
+.foto-avaliacao:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .avaliacoes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .foto-avaliacao {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+
+    .foto-avaliacao:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #9b7650;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px 15px;
+    margin-top: 50px;
+    border-top: 3px solid #131212;
+}
+
+footer h2 {
+    margin: 0 0 10px;
+    font-size: 24px; Seriously porra toda diferente
+}
+
+footer p {
+    margin: 8px 0;
+    color: #ddd;
+}
+
+/* Links do rodapé */
+.rodape-links,
+.rodape-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #f5b400;
+}
+
+/* Copyright */
+footer .copyright {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+
+    footer {
+        padding: 25px 15px 15px;
+    }
+
+    footer h2 {
+        font-size: 21px;
+    }
+
+    .rodape-links,
+    .rodape-contato {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    footer .copyright {
+        font-size: 12px;
+    }
+}
+

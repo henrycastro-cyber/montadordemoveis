@@ -660,4 +660,24 @@ footer .copyright {
         font-size: 12px;
     }
 }
+/* =========================
+   BANNER DE DIVULGAÇÃO
+========================= */
 
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: #eee5d8;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255, 252, 252, 0.25);
+}
